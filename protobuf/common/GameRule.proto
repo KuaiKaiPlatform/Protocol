@@ -1,0 +1,18 @@
+option java_package = "com.kuaikai.game.common.msg.pb";  
+option java_outer_classname="GameRulePB";  
+
+enum GameRule {
+
+	// 扑克玩法：99开头
+    JIN_HUA					= 99001;
+    NIU_NIU					= 99002;
+    BI_JI					= 99003;
+    WA_KENG					= 99004;
+    TUI_DUI_ZI				= 99005;
+    ZHUO_LAO_MA_ZI			= 99006;
+    SAN_DAI					= 99007;
+    GAN_DENG_YAN			= 99008;
+    DOU_DI_ZHU				= 99009;
+
+    
+}

@@ -1,0 +1,14 @@
+option java_package = "com.kuaikai.game.mahjong.msg.pb";  
+option java_outer_classname="PlayerInfoPB";  
+
+import "account/PlayerBasicInfo.proto";
+
+message PlayerInfo {
+
+	required PlayerBasicInfo basicInfo = 1;			// 玩家基本信息
+	required bool prepared = 2;						// 是否准备
+	required bool offline = 3;						// 是否离线
+	repeated int32 points = 4;						// 各项分数
+	repeated int32 diPoints = 5;					// 当前底各项分数
+
+}
