@@ -1,0 +1,12 @@
+option java_package = "com.kuaikai.game.mahjong.msg.pb";  
+option java_outer_classname="DirectionPB";  
+
+// 牌桌方位
+enum Direction {
+
+    DONG	= 1;
+    NAN		= 2;
+    XI		= 3;
+    BEI		= 4;
+    
+}
