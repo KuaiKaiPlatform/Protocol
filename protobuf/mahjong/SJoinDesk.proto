@@ -2,7 +2,8 @@ option java_package = "com.kuaikai.game.mahjong.msg.pb";
 option java_outer_classname="JoinDeskPB";  
 
 import "mahjong/PlayerInfo.proto";
-import "common/RuleSetting.proto";
+import "mahjong/GameSetting.proto";
+import "common/GameRule.proto";
 
 message SJoinDesk {
 
@@ -14,7 +15,8 @@ message SJoinDesk {
 	}
 
 	repeated PlayerInfo playerInfos = 1;			// 所有玩家信息
-	required RuleSetting ruleSetting = 2;			// 玩法规则设置
-	required Status status = 3;						// 牌桌状态
+	required GameRule rule = 2;						// 玩法编号
+	required GameSetting setting = 3;				// 规则设置
+	required Status status = 4;						// 牌桌状态
 
 }
