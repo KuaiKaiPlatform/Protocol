@@ -1,1 +1,3 @@
 protobuf/genPro.bat
+protobuf/output*
+protobuf/generated
