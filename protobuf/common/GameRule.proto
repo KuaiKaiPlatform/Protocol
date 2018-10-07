@@ -1,6 +1,8 @@
 option java_package = "com.kuaikai.game.common.msg.pb";  
 option java_outer_classname="GameRulePB";  
 
+package common;
+
 enum GameRule {
 
 	// 扑克玩法：99开头

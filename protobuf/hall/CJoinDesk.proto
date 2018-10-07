@@ -1,0 +1,11 @@
+option java_package = "com.kuaikai.game.hall.msg.pb";  
+option java_outer_classname="CJoinDeskPB";  
+
+package hall;
+
+message CJoinDesk {	// 玩家请求加入牌桌
+
+	required int32 deskId = 1;
+	optional int32 clubId = 2;
+
+}

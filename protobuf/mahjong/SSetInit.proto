@@ -1,0 +1,15 @@
+option java_package = "com.kuaikai.game.mahjong.msg.pb";  
+option java_outer_classname="SSetInitPB";  
+
+package mahjong;
+
+import "mahjong/PlayerSetInfo.proto";
+
+message SSetInit {	// 开局或重连后返回牌局初始状态
+
+	repeated mahjong.PlayerSetInfo playerSetInfos = 1;			// 所有玩家牌局初始状态
+	required int32 curSet = 2;									// 当前局数
+	required int32 remainCards = 3;								// 剩余牌数
+	required int32 bankerId = 4;								// 庄家ID
+
+}

@@ -1,0 +1,18 @@
+option java_package = "com.kuaikai.game.hall.msg.pb";  
+option java_outer_classname="SDeskInfoPB";  
+
+package hall;
+
+import "common/PlayerInfo.proto";
+import "common/GameSetting.proto";
+import "common/GameRule.proto";
+import "common/GameStatus.proto";
+
+message SDeskInfo {	// 加入后返回牌桌信息
+
+	repeated common.PlayerInfo playerInfos = 1;				// 所有玩家信息
+	required common.GameRule rule = 2;						// 玩法编号
+	required common.GameSetting setting = 3;				// 规则设置
+	required common.GameStatus status = 4;					// 游戏状态
+
+}
