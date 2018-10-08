@@ -7,7 +7,7 @@ import "common/PlayerInfo.proto";
 
 message SPlayerJoin {	// 有玩家加入牌桌
 
-	required common.PlayerInfo playerInfo = 1;			// 玩家信息
+	required common.PlayerInfo player = 1;				// 玩家信息
 	required int32 deskId = 2;							// 牌桌ID
 	optional int32 clubId = 3;							// 俱乐部ID
 

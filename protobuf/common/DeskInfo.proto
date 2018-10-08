@@ -1,0 +1,20 @@
+option java_package = "com.kuaikai.game.common.msg.pb";  
+option java_outer_classname="DeskInfoPB";  
+
+package common;
+
+import "common/PlayerInfo.proto";
+import "common/GameSetting.proto";
+import "common/GameRule.proto";
+import "common/GameStatus.proto";
+
+message DeskInfo {	// 牌桌信息
+
+	required int32 deskId = 1;								// 牌桌ID
+	optional int32 clubId = 2;								// 俱乐部ID
+	repeated common.PlayerInfo players = 3;					// 所有玩家信息
+	optional common.GameRule rule = 4;						// 玩法编号
+	optional common.GameSetting setting = 5;				// 规则设置
+	optional common.GameStatus status = 6;					// 游戏状态
+
+}
