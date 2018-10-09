@@ -3,7 +3,7 @@ option java_outer_classname="DirectionPB";
 
 package mahjong;
 
-// 牌桌方位
+// 牌桌方位，对应座位
 enum Direction {
 
     DONG	= 1;

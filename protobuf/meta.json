@@ -7,14 +7,18 @@
         "res/pb/account/SLogout.proto",
         "res/pb/account/UserInfo.proto",
         "res/pb/common/DeskInfo.proto",
+        "res/pb/common/Dialect.proto",
         "res/pb/common/GameRule.proto",
         "res/pb/common/GameSetting.proto",
         "res/pb/common/GameStatus.proto",
+        "res/pb/common/GlobalSetting.proto",
+        "res/pb/common/MahjongTheme.proto",
         "res/pb/common/PlayerInfo.proto",
         "res/pb/hall/CJoinDesk.proto",
-        "res/pb/hall/SJoinDesk.proto",
-        "res/pb/hall/SDeskInfo.proto",
         "res/pb/hall/CQuitDesk.proto",
+        "res/pb/hall/SDeskInfo.proto",
+        "res/pb/hall/SGlobalSetting.proto",
+        "res/pb/hall/SJoinDesk.proto",
         "res/pb/hall/SPlayerJoin.proto",
         "res/pb/hall/SPlayerQuit.proto",
         "res/pb/hall/SQuitDesk.proto",
@@ -38,7 +42,8 @@
         "CQuitDesk": 104,
         "SQuitDesk": 105,
         "SPlayerJoin": 106,
-        "SPlayerQuit": 107
+        "SPlayerQuit": 107,
+        "SGlobalSetting": 108
     },
     "mahjong": {
         "SSetInit": 1001
