@@ -5,10 +5,12 @@ package common;
 
 message GameSetting {	// 玩法规则设置
 
+	required string json = 1;		// JSON 格式的 setting 内容
+
 	// 麻将相关
-	optional int32 totalSet = 1;					// 总局数
-	optional int32 totalQuan = 2;					// 总圈数
-	optional int32 totalDi = 3;						// 总底数
-	optional int32 totalPlayer = 4;					// 玩家人数
+	optional int32 totalSet = 2;					// 总局数
+	optional int32 totalQuan = 3;					// 总圈数
+	optional int32 totalDi = 4;						// 总底数
+	optional int32 totalPlayer = 5;					// 玩家人数
 
 }
