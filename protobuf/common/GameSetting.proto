@@ -5,7 +5,7 @@ package common;
 
 message GameSetting {	// 玩法规则设置
 
-	required string json = 1;		// JSON 格式的 setting 内容
+	required string json = 1;		// JSON 格式的 setting 内容（客户端相关）
 
 	// 麻将相关
 	optional int32 totalSet = 2;					// 总局数
