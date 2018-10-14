@@ -3,6 +3,7 @@ option java_outer_classname="DeskInfoPB";
 
 package common;
 
+import "common/DeskUniq.proto";
 import "common/PlayerInfo.proto";
 import "common/GameSetting.proto";
 import "common/GameRule.proto";
@@ -10,11 +11,11 @@ import "common/GameStatus.proto";
 
 message DeskInfo {	// 牌桌信息
 
-	required int32 deskId = 1;								// 牌桌ID
-	optional int32 clubId = 2;								// 俱乐部ID
-	repeated common.PlayerInfo players = 3;					// 所有玩家信息
-	optional common.GameRule rule = 4;						// 玩法编号
-	optional common.GameSetting setting = 5;				// 规则设置
-	optional common.GameStatus status = 6;					// 游戏状态
+	required common.DeskUniq uniq = 1;						// 牌桌唯一标识
+	repeated common.PlayerInfo players = 2;					// 所有玩家信息
+	optional common.GameRule rule = 3;						// 玩法编号
+	optional common.GameSetting setting = 4;				// 规则设置
+	optional common.GameStatus status = 5;					// 游戏状态
+	optional int32 curSet = 6;								// 当前局数
 
 }

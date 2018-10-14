@@ -3,9 +3,10 @@ option java_outer_classname="SJoinDeskPB";
 
 package hall;
 
+import "common/DeskUniq.proto";
+
 message SJoinDesk {	// 回复玩家加入牌桌
 
-	required int32 deskId = 1;
-	optional int32 clubId = 2;
+	required common.DeskUniq uniq = 1;						// 牌桌唯一标识
 
 }

@@ -3,10 +3,11 @@ option java_outer_classname="SPlayerQuitPB";
 
 package hall;
 
+import "common/DeskUniq.proto";
+
 message SPlayerQuit {	// 有玩家退出牌桌
 
 	required int32 uid = 1;								// 玩家ID
-	required int32 deskId = 2;							// 牌桌ID
-	optional int32 clubId = 3;							// 俱乐部ID
+	required common.DeskUniq uniq = 2;					// 牌桌唯一标识
 
 }
