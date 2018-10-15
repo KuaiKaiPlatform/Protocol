@@ -7,6 +7,7 @@
         "res/pb/account/SLogout.proto",
         "res/pb/account/UserInfo.proto",
         "res/pb/common/DeskInfo.proto",
+        "res/pb/common/DeskUniq.proto",
         "res/pb/common/Dialect.proto",
         "res/pb/common/GameRule.proto",
         "res/pb/common/GameSetting.proto",
@@ -26,6 +27,7 @@
         "res/pb/mahjong/Direction.proto",
         "res/pb/mahjong/OperType.proto",
         "res/pb/mahjong/PlayerSetInfo.proto",
+        "res/pb/mahjong/SetStage.proto",
         "res/pb/mahjong/SSetInit.proto"
     ],
     "account": {
