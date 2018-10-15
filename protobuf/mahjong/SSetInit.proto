@@ -4,6 +4,7 @@ option java_outer_classname="SSetInitPB";
 package mahjong;
 
 import "mahjong/PlayerSetInfo.proto";
+import "mahjong/SetStage.proto";
 
 message SSetInit {	// 开局或重连后返回牌局初始状态
 
@@ -11,5 +12,6 @@ message SSetInit {	// 开局或重连后返回牌局初始状态
 	required int32 curSet = 2;									// 当前局数
 	required int32 remainCards = 3;								// 剩余牌数
 	required int32 bankerId = 4;								// 庄家ID
+	required mahjong.SetStage stage = 5;						// 牌局阶段
 
 }
